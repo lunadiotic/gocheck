@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Logo />
+      <Form />
+      <CheckList />
+      <Stats />
     </div>
+  );
+}
+
+function Logo() {
+  return <span className="logo">📝 GoCheck ✅</span>;
+}
+
+function Form() {
+  return (
+    <div className="add-form">
+      <h3>Ada yang mau kamu catat? 🤔</h3>
+    </div>
+  );
+}
+
+function CheckList() {
+  return (
+    <div className="list">
+      <ul>
+        <li>Makan</li>
+        <li>Tidur</li>
+      </ul>
+    </div>
+  );
+}
+
+function Stats() {
+  return (
+    <footer className="stats">
+      <span>🗒️ Kamu punya x catatan dan baru x yg dichecklist (x%) ✅</span>
+    </footer>
   );
 }
 

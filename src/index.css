@@ -56,7 +56,7 @@ input {
   background-color: #f5efe7;
   color: #5a3e2b;
   font-family: inherit;
-  border: none;
+  border: solid 1px #414141;
   border-radius: 10rem;
   padding: 1.2rem 3.2rem;
   font-weight: 700;
